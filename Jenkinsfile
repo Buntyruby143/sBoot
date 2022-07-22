@@ -27,21 +27,21 @@ pipeline {
        }
         stage('Building the project') {
          steps {
-          dir('cBoot') {
+          dir('sBoot') {
             sh('mvn clean install')
                      }
              }
         }
         stage ('testing') {
           steps {
-          dir('cBoot') {
+          dir('sBoot') {
             sh('mvn test')
                     }
              }
         }
         stage ('Deliver') {
           steps {
-            dir('cBooot') {
+            dir('sBooot') {
               sh('deliver.sh')
                         }
                 }
