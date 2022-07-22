@@ -42,7 +42,7 @@ pipeline {
         stage ('Deliver') {
           steps {
             dir('cBooot') {
-              sh('./jenkins/scripts/deliver.sh')
+              sh('deliver.sh')
                         }
                 }
         }
