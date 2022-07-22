@@ -17,7 +17,7 @@ pipeline {
        stage('Cloning Repo') {
         steps {
           echo "Cloning the Repo"
-          sh "https://github.com/Buntyruby143/sBoot"
+          sh "git clone https://github.com/Buntyruby143/sBoot"
             }
        }
        stage('Hello Display content') {
