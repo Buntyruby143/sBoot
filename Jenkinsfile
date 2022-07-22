@@ -41,7 +41,7 @@ pipeline {
         }
         stage ('Deliver') {
           steps {
-            dir('sBooot') {
+            dir('sBoot') {
               sh('deliver.sh')
                         }
                 }
