@@ -32,7 +32,7 @@ pipeline {
                      }
              }
         }
-        stage ('testing) {
+        stage ('testing') {
           steps {
           dir('cBoot') {
             sh('mvn test')
