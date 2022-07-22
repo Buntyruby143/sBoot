@@ -42,7 +42,7 @@ pipeline {
         stage ('Deliver') {
           steps {
             dir('sBoot') {
-              sh 'deliver.sh'
+              sh './deliver.sh'
                         }
                 }
         }
