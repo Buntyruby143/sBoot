@@ -20,7 +20,7 @@ pipeline {
           sh "https://github.com/Buntyruby143/sBoot"
             }
        }
-       stage{'Hello Display content') {
+       stage('Hello Display content') {
         steps {
           echo "This is my first Multipipeline Project"
            }
